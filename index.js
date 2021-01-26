@@ -9,7 +9,7 @@ cors_proxy.createServer({
         key: fs.readFileSync('./privkey.pem'),
         cert: fs.readFileSync('./fullchain.pem')
     },
-    originWhitelist: ["https://*.editaverse.com", "https://editaverse.com"],
+    originWhitelist: ["https://local.webaverse.com", "https://*.editaverse.com", "https://editaverse.com"],
 //    originWhitelist: [], // Allow all origins
 }).listen(port, host, function() {
     console.log('Running CORS Anywhere on ' + host + ':' + port);
